@@ -54,13 +54,68 @@ header > .user_nav > p {
     margin: auto;
     font-weight: bold;
 }
-
 a > .arrow {
     margin-left: 2px;
+    font-size: 18px;
     transform: rotate(90deg);
     transition: 1s transform;
 }
 
+main {
+    width: 100%;
+}
+main > .slider {
+    display: grid;
+    grid-template-columns: 500px 400px;
+    justify-content: center;
+}
+.slider > .slider_img {
+    height: 500px;
+    width: 500px;
+    background: center/70% no-repeat;
+}
+.slider > .slider_info {
+    height: 500px;
+    width: 400px;
+    display: grid;
+    grid-template-rows: 250px 150px auto;
+}
+.slider_info > .info_title > h1 {
+    font-weight: lighter;
+    padding: 15% 0;
+}
+.slider_info > .slider_button {
+    width: 140px;
+    height: 25px;
+    padding: 10px;
+    background-color: #7791F1;
+    border-radius: 25px;
+    box-shadow: 3px 3px 7px #BBBCBF;
+    border: solid 1px #e9ecf1;
+    text-align: center;
+    cursor: pointer;
+}
+.slider_button > p {
+    color: white;
+}
+.slider_info > .slider_pages {
+    padding: 15px;
+}
+.slider_pages > .point_page {
+    display: inline-block;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #EAEDF2;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 1.8px #8e8b8b;
+    cursor: pointer;
+}
+.slider_pages > .active {
+    background: #7791F1;
+    box-shadow: 1px 1px 4px #7a7f86;
+    border: solid 1px white;
+}
 
 footer {
     width: 100%;
@@ -151,4 +206,10 @@ footer > .footer_wraper > a {
     font-size: 14px;
     margin: 0px auto;
     height: 20px
+}
+
+.last_info {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
 }
