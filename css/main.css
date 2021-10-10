@@ -8,6 +8,10 @@
     color: #2C3036;
 }
 
+html {
+    background-color: #E9ECF1;
+}
+
 body {
     width: 1150px;
     margin: auto;
@@ -83,15 +87,22 @@ footer > .footer_wraper > a {
     display: grid;
     grid-template-columns: 40px 40px 40px auto;
 }
-.users_contact > .social_media {
+.users_contact > .social_media_block {
+    display: block;
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    border: solid 2px white;
+    border: solid 2px #E9ECF1;
     box-shadow: 2px 2px 8px #999da5;
     margin: 0px auto;
+    transition: 0.5s;
 }
-.users_contact > .social_media > img {
+
+.users_contact > .social_media_block:hover {
+    box-shadow: 2px 2px 10px #3e4044;
+}
+
+.users_contact > .social_media_block > img {
     margin: 5px;
 }
 .users_contact > .contacts {
@@ -106,19 +117,35 @@ footer > .footer_wraper > a {
     font-weight: lighter;
     color: #898C91;
 }
-.footer_wraper > .input_border > input {
+.footer_wraper > .input_border > .user_input_phone {
+    background-color: #E9ECF1;
     height: 40px;
     width: 90%;
     padding: 5px 10px;
     border: solid 5px white;
-    border-radius: 18px;
-    box-shadow: inset 0px 0px 6px #999da5;
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 8px #999da5;
+}
+.footer_wraper > .input_border > .button {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-top: -48px;
+    margin-left: 220px;
+    background: url(/image/send.png) center/80% no-repeat;
+    cursor: pointer;
+    transition: 0.3s background-size;
+}
+.footer_wraper > .input_border > .button:hover {
+    background-size: 90%;
 }
 .footer_wraper > .input_border {
     margin-top: 30px;
     height: 60px;
-    border-radius: 18px;
-    box-shadow: 2px 2px 8px #999da5;
+    border-radius: 12px;
+    box-shadow: 1px 1px 12px #999da5;
 }
 .footer_wraper > .user_agreement {
     font-size: 14px;
