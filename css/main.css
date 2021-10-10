@@ -104,17 +104,65 @@ main > .slider {
 .slider_pages > .point_page {
     display: inline-block;
     margin-right: 5px;
-    width: 12px;
-    height: 12px;
-    background-color: #EAEDF2;
+    width: 10px;
+    height: 10px;
+    background-color: #F2F2F2;
     border-radius: 50%;
-    box-shadow: inset 1px 1px 1.8px #8e8b8b;
+    box-shadow: inset 2px 2px 3px #c8c8c8;
     cursor: pointer;
 }
 .slider_pages > .active {
     background: #7791F1;
-    box-shadow: 1px 1px 4px #7a7f86;
+    box-shadow: 1px 1px 4px #aeaeae;
     border: solid 1px white;
+}
+main > .main_tagline {
+    margin: 130px 0px;
+}
+main > .tiles {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+}
+.tiles > .tile {
+    height: 300px;
+    width: 300px;
+    background: #e9ecf1;
+    margin: 20px;
+    padding: 30px 40px;
+    border-radius: 30px;
+    box-shadow: 15px 15px 20px #D7D7D7, 0px 0px 20px #fff;
+    background: url(/image/slider_preview.png) no-repeat;
+    background-position: bottom -100px right 20px;
+    background-size: 60%;
+}
+.tile > .tile_title {
+    font-size: 17px;
+    margin: 10px 0px;
+}
+.tile > .tile_description {
+    font-size: 12px;
+    width: 225px;
+}
+.tile > .tile_button {
+    background: #e9ecf1;
+    border-radius: 50%;
+    margin-top: -100px;
+    float: right;
+    box-shadow: 3px 3px 10px #868282, -3px -3px 6px #fff;
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: #898c91;
+    cursor: pointer;
+    transition: 0.5s background-color, 0.5s color;
+}
+.tile > .tile_button:hover {
+    background-color: #7593F0;
+    color: #fff;
 }
 
 footer {
@@ -137,7 +185,6 @@ footer > .footer_wraper > .footer_title {
 footer > .footer_wraper > a {
     margin: 7px;
 }
-
 .users_contact {
     display: grid;
     grid-template-columns: 40px 40px 40px auto;
@@ -152,11 +199,9 @@ footer > .footer_wraper > a {
     margin: 0px auto;
     transition: 0.5s;
 }
-
 .users_contact > .social_media_block:hover {
     box-shadow: 2px 2px 10px #3e4044;
 }
-
 .users_contact > .social_media_block > img {
     margin: 5px;
 }
@@ -200,7 +245,7 @@ footer > .footer_wraper > a {
     margin-top: 30px;
     height: 60px;
     border-radius: 12px;
-    box-shadow: 1px 1px 12px #999da5;
+    box-shadow: -1px -1px 8px #fff, 1px 1px 12px #999da5;
 }
 .footer_wraper > .user_agreement {
     font-size: 14px;
